@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".Update">
+
+        <TextView
+            android:id="@+id/look_question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000"
+            android:text="1.在學習上，我最近遭遇到哪些問題？\n(由於...，所以發生...)\n※參考範例：" />
+
+        <EditText
+            android:id="@+id/looknote_text1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10">
+        </EditText>
+
+        <TextView
+            android:id="@+id/look_question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.在學習上，我遭遇到問題心情為何？\n(因為...，所以我覺得...)\n※參考範例："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <EditText
+            android:id="@+id/looknote_text2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10">
+        </EditText>
+
+        <TextView
+            android:id="@+id/look_start3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是遇到了甚麼學習上的問題呢？"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioGroup
+            android:id="@+id/look_typequestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/look_radioButton_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="學業成績不理想" />
+
+            <RadioButton
+                android:id="@+id/look_radioButton_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="學業成績好" />
+
+            <RadioButton
+                android:id="@+id/look_radioButton_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="學習困難" />
+
+            <RadioButton
+                android:id="@+id/look_radioButton_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="其他學習相關問題" />
+
+            <RadioButton
+                android:id="@+id/look_radioButton_q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="其他學習相關問題" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/look_start4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的感受是？"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioGroup	android:id="@+id/look_feel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton android:id="@+id/look_radioButton_happy1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="喜：覺得開心"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/look_radioButton_happy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="-85px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="喜：覺得感恩" />
+
+            <RadioButton android:id="@+id/look_radioButton_soso1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="平：覺得平常"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/look_radioButton_soso2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="-85px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="平：覺得應該" />
+
+            <RadioButton android:id="@+id/look_radioButton_sad1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="哀：覺得難過"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/look_radioButton_sad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="-85px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="哀：覺得失望" />
+
+            <RadioButton android:id="@+id/look_radioButton_angry1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="怒：覺得憤怒"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/look_radioButton_angry2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="-85px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="怒：覺得鬱悶" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</ScrollView>

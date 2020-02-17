@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="General">
+        <menu>
+            <item
+                android:id="@+id/home2"
+                android:icon="@mipmap/ic_launcher"
+                android:title="補充教材" />
+            <item
+                android:id="@+id/another2"
+                android:icon="@mipmap/ic_launcher_round"
+                android:title="進一步諮詢" />
+            <item
+                android:id="@+id/another3"
+                android:icon="@mipmap/ic_launcher"
+                android:title="關於" />
+        </menu>
+    </item>
+
+    <!--    <item android:title="Communication">-->
+    <!--        <menu>-->
+    <!--            <item-->
+    <!--                android:id="@+id/home1"-->
+    <!--                android:icon="@drawable/ic_home_black_24dp"-->
+    <!--                android:title="Home" />-->
+    <!--            <item-->
+    <!--                android:id="@+id/another1"-->
+    <!--                android:icon="@mipmap/ic_launcher_round"-->
+    <!--                android:title="Another Menu" />-->
+    <!--        </menu>-->
+    <!--    </item>-->
+</menu>

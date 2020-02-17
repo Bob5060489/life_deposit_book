@@ -1,0 +1,2420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/questionnaire_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="學習問題後測問卷"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:id="@+id/look_question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000"
+            android:text="學號" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10">
+        </EditText>
+
+        <TextView
+            android:id="@+id/look_question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="學院"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10">
+        </EditText>
+
+        <TextView
+            android:id="@+id/look_question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="學系"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10">
+        </EditText>
+
+        <TextView
+            android:id="@+id/look_question6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="年級"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="一年級" />
+
+            <RadioButton
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="-85px"
+                android:text="二年級" />
+
+            <RadioButton
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="三年級" />
+
+            <RadioButton
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="-85px"
+                android:text="四年級或更高" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/look_question7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="性別"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="-85px"
+                android:text="女" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/group1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="※情緒覺察"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:id="@+id/questionnaire_question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. 學習(後).我會因為和別人比較而影響自己的情緒 "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer1_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. 學習(後).我因為別人的閒言閒語而影響自己的情緒"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer2_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. 學習(後).我對於過去別人傷害我的事情總是耿耿於懷"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer3_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. 學習(後).我對在意的事情常會產生糾結的情緒困擾"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer4_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer4_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. 學習(後).我會因為自己努力付出卻失敗而覺得沮喪"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer5_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer5_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. 學習(後).我會被過去失敗的陰影所困擾，影響自己繼續努力的勇氣"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer6_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer6_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer6_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer6_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer6_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. 學習(後).事情的發展未達心中的完美目標，令我懊惱"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer7_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer7_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer7_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer7_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer7_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="※情緒處理"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:id="@+id/questionnaire_question8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8. 學習(後).我能夠清楚地了解自己內心的各種情緒變化"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer8_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer8_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer8_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer8_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer8_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9. 學習(後). 我會分析自己情緒變化的原因"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer9_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer9_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer9_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer9_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer9_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10. 學習(後).我會以正向的心態面對情緒困擾"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer10_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer10_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer10_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer10_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer10_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11. 學習(後).遇到情緒困擾時，我會積極尋找解決方法"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer11_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer11_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer11_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer11_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer11_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12. 學習(後).遇到情緒困擾時，我會主動找朋友訴說"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer12_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer12_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer12_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer12_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer12_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13. 學習(後).遇到情緒困擾時，我會經由運動來紓解"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer13_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer13_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer13_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer13_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer13_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14. 學習(後).遇到情緒困擾時，我會經由吃喝來紓解"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer14_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer14_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer14_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer14_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer14_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15. 學習(後).遇到情緒困擾時，我會經由娛樂活動來紓解"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer15_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer15_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer15_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer15_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer15_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16. 學習(後).遇到情緒困擾時，我會尋找諮詢管道來紓解"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer16_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer16_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer16_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer16_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer16_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="17. 學習(後).遇到情緒困擾時，我會經由內心的沉澱和反思來紓解"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer17_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer17_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer17_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer17_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer17_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/group3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="※情緒因應 - 學習壓力"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:id="@+id/questionnaire_question18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18. 學習(後).學習成績的好壞會影響我的情緒"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer18_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer18_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer18_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer18_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer18_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="19. 學習(後).我會因為學業的壓力而焦慮"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer19_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer19_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer19_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer19_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer19_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20. 學習(後).我會因為和他人比較學習成績而鬱悶"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer20_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer20_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer20_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer20_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer20_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="21. 學習(後).我知道只要找到方法努力去做，成績自然會變好"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer21_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer21_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer21_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer21_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer21_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22. 學習(後).我知道我要規劃讀書計劃，並且實際去執行它"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer22_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer22_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer22_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer22_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer22_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="23. 學習(後).我知道成績不好並不完全是我很不認真"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer23_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer23_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer23_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer23_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer23_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="24. 學習(後).我會知道成績不理想只是一個學習的必然過程"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer24_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer24_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer24_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer24_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer24_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25. 學習(後).在成績不理想時我能夠為自己打氣"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer25_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer25_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer25_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer25_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer25_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="26. 學習(後).我能夠找到方法放鬆我的壓力"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer26_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer26_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer26_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer26_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer26_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="27. 學習(後).我會經由運動來放鬆壓力"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer27_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer27_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer27_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer27_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer27_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="28. 學習(後).我會經由和同學討論來放鬆壓力"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer28_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer28_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer28_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer28_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer28_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="29. 學習(後).我會經由娛樂活動來放鬆壓力"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer29_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer29_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer29_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer29_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer29_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30. 學習(後).我相信只要努力就一定可以改善學業成績"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer30_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer30_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer30_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer30_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer30_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="31.學習(後). 我知道自己必須好好規劃我的讀書計劃"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer31_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer31_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer31_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer31_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer31_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="32. 學習(後).我會重新擬定學習計劃並努力執行"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer32_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer32_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer32_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer32_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer32_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="33. 學習(後).我會尋求學習資源，改善學習成績"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer33_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer33_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer33_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer33_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer33_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionnaire_question34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="34. 學習(後).我知道我可以找好朋友一起唸書一起進步"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不符合       1       2       3       4       5 完全符合"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="	#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/questionnaire_answer34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/answer34_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="70dp"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/answer34_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="115.5dp"
+                android:layout_marginTop="-85px"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/answer34_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="162.5dp"
+                android:layout_marginTop="-85px"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/answer34_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="209.5dp"
+                android:layout_marginTop="-85px"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/answer34_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="256dp"
+                android:layout_marginTop="-85px"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button100"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="回到主畫面" />
+
+    </LinearLayout>
+
+</ScrollView>
